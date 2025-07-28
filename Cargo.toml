@@ -1,0 +1,24 @@
+[package]
+name = "kanban"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "kanban"
+path = "src/main.rs"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1.0", features = ["full"] }
+tower-http = { version = "0.5", features = ["fs"] }
+clap = { version = "4.4", features = ["derive"] }
+include_dir = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
+diesel = { version = "2.1.0", features = ["postgres", "chrono", "r2d2"] }
+diesel_migrations = { version = "2.1.0", features = ["postgres"] }
+dirs = "5.0"
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+mime_guess = "2.0.5"

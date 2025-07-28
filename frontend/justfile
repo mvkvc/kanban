@@ -1,0 +1,8 @@
+deps:
+    bun install
+
+build:
+    bun run build
+
+clean:
+    rm -rf dist/ node_modules/

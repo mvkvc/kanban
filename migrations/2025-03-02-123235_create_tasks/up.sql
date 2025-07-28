@@ -1,0 +1,7 @@
+CREATE TABLE tasks (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR NOT NULL,
+    content VARCHAR NOT NULL,
+    deadline TIMESTAMP,
+    status VARCHAR NOT NULL DEFAULT 'TODO'
+);
